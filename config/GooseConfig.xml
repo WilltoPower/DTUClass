@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <goose appID="1000" gocbRef="simpleIOGenericIO/LLN0$GO$gcbAnalogValues" dataSet="simpleIOGenericIO/LLN0$AnalogValues"/>
+  <device mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+    <MSIDE>
+      <device enable ="1" appID ="1001" faultIndex="0" isolateIndex="12" checkIndex="6" currentIndex="24"/>
+      <device enable ="0" appID ="1002" faultIndex="1" isolateIndex="13" checkIndex="7" currentIndex="25"/>
+      <device enable ="0" appID ="1003" faultIndex="2" isolateIndex="14" checkIndex="8" currentIndex="26"/>
+    </MSIDE>
+    <NSIDE>
+      <device enable ="0" appID ="1004" faultIndex="3" isolateIndex="15" checkIndex="9" currentIndex="27"/>
+      <device enable ="0" appID ="1005" faultIndex="4" isolateIndex="16" checkIndex="10" currentIndex="28"/>
+      <device enable ="0" appID ="1006" faultIndex="5" isolateIndex="17" checkIndex="11" currentIndex="29"/>
+    </NSIDE>
+  </device>
+</config>

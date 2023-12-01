@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="DTUTools">
+    <file>icon/goose.png</file>
+    <file>icon/syscfg.png</file>
+    <file>icon/LOGO.ico</file>
+    <file>icon/buildver.png</file>
+    <file>icon/time.png</file>
+    <file>icon/remote.png</file>
+    <file>icon/config.png</file>
+    <file>icon/restart.png</file>
+    <file>icon/update.png</file>
+    <file>icon/version.png</file>
+  </qresource>
+</RCC>

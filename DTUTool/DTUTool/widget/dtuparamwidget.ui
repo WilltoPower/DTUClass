@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtuparamClass</class>
+ <widget class="QWidget" name="dtuparamClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dtuparam</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" colspan="4">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>780</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btn_default">
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>恢复默认</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btn_save">
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>下发</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="btn_read">
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>读取</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_default</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuparamClass</receiver>
+   <slot>set_default()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>847</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_read</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuparamClass</receiver>
+   <slot>read_param()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1047</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_save</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuparamClass</receiver>
+   <slot>save_param()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>947</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>read_param()</slot>
+  <slot>save_param()</slot>
+  <slot>set_default()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="base\appinit.cpp">
+      <Filter>main\Quihelper</Filter>
+    </ClCompile>
+    <ClCompile Include="base\appdata.cpp">
+      <Filter>main\Quihelper</Filter>
+    </ClCompile>
+    <ClCompile Include="base\base64helper.cpp">
+      <Filter>main\Quihelper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\form\frmmain.cpp">
+      <Filter>frame</Filter>
+    </ClCompile>
+    <ClCompile Include="base\iconhelper.cpp">
+      <Filter>main\Quihelper</Filter>
+    </ClCompile>
+    <ClCompile Include="base\quihelper.cpp">
+      <Filter>main\Quihelper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="function\dturpcclient.cpp">
+      <Filter>界面\连接管理\RPC通信</Filter>
+    </ClCompile>
+    <ClCompile Include="function\dtuconfigure.cpp">
+      <Filter>工具配置</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtuconfigure\jsoncpp.cpp">
+      <Filter>工具配置\文件加载\json</Filter>
+    </ClCompile>
+    <ClCompile Include="function\dtutoolinit.cpp">
+      <Filter>功能\总初始化</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\serialdialog.cpp">
+      <Filter>界面\控件\串口配置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuconnectdialog.cpp">
+      <Filter>界面\连接管理</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\QCreateHelper.cpp">
+      <Filter>界面\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuinfomationdialog.cpp">
+      <Filter>界面\信息查看</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\thirdparty\include\pugixml\pugixml.cpp">
+      <Filter>工具配置\文件加载\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="function\dtutask.cpp">
+      <Filter>功能\任务</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuparamwidget.cpp">
+      <Filter>界面\定值</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtureportwidget.cpp">
+      <Filter>界面\报告</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuprotactdlg.cpp">
+      <Filter>界面\报告\保护动作报告</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuexportwidget.cpp">
+      <Filter>界面\报告\报告导出</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuadjustwidget.cpp">
+      <Filter>界面\定值\定值整定</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtumodifyadjustdlg.cpp">
+      <Filter>界面\定值\定值整定</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuparamchannelDlg.cpp">
+      <Filter>界面\定值\定值整定</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtucsprotocolexplain.cpp">
+      <Filter>界面\规约</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtucsprotocolwidget.cpp">
+      <Filter>界面\规约</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dturulefilewidget.cpp">
+      <Filter>界面\历史文件</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dturmctrlWidget.cpp">
+      <Filter>界面\控件\遥控</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dturmcwidget.cpp">
+      <Filter>界面\遥调遥控</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuonefixmodify.cpp">
+      <Filter>界面\点表管理\单点表修改</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtufixmodify.cpp">
+      <Filter>界面\点表管理</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtusoftinfodialog.cpp">
+      <Filter>界面\软件信息</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuinversiondialog.cpp">
+      <Filter>界面\软件信息\内部软件信息</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuupdateWidget.cpp">
+      <Filter>界面\软件配置\程序升级</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtucalibratetimedlg.cpp">
+      <Filter>界面\软件配置\时间设置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtugoosecfg.cpp">
+      <Filter>界面\软件配置\GOOSE设置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtumacaddress.cpp">
+      <Filter>界面\控件\MAC地址</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\protodialog.cpp">
+      <Filter>界面\控件\规约配置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuipaddress.cpp">
+      <Filter>界面\控件\IP地址</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuprotocfgdialog.cpp">
+      <Filter>界面\软件配置\规约配置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuarmconfigdialog.cpp">
+      <Filter>界面\软件配置\后台设置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtulinelossdialog.cpp">
+      <Filter>界面\软件配置\线损配置</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuarminfowidget.cpp">
+      <Filter>界面\信息查看\后台信息\硬盘信息</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtuterminalwidget.cpp">
+      <Filter>界面\终端</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\dtutestapiwidgetsclass.cpp">
+      <Filter>界面\测试</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuselfcheckprase.cpp">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuselfcheckinfo.cpp">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuoutput.cpp">
+      <Filter>界面\导出</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\appdata.h">
+      <Filter>main\Quihelper</Filter>
+    </ClInclude>
+    <ClInclude Include="base\base64helper.h">
+      <Filter>main\Quihelper</Filter>
+    </ClInclude>
+    <ClInclude Include="base\quihelper.h">
+      <Filter>main\Quihelper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\head.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="function\dtuconfigure.h">
+      <Filter>工具配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\json\json.h">
+      <Filter>工具配置\文件加载\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\json\json-forwards.h">
+      <Filter>工具配置\文件加载\json</Filter>
+    </ClInclude>
+    <ClInclude Include="function\dtutoolinit.h">
+      <Filter>功能\总初始化</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\include\pugixml\pugiconfig.hpp">
+      <Filter>工具配置\文件加载\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\include\pugixml\pugixml.hpp">
+      <Filter>工具配置\文件加载\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="function\dtutask.h">
+      <Filter>功能\任务</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\dtuadjust.h">
+      <Filter>界面\定值\定值整定</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\dtucsprotocolanalysis.h">
+      <Filter>界面\规约</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>main\图标</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="base\appinit.h">
+      <Filter>main\Quihelper</Filter>
+    </QtMoc>
+    <QtMoc Include="src\form\frmmain.h">
+      <Filter>frame</Filter>
+    </QtMoc>
+    <QtMoc Include="base\iconhelper.h">
+      <Filter>main\Quihelper</Filter>
+    </QtMoc>
+    <QtMoc Include="function\dturpcclient.h">
+      <Filter>界面\连接管理\RPC通信</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\serialdialog.h">
+      <Filter>界面\控件\串口配置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuconnectdialog.h">
+      <Filter>界面\连接管理</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\QCreateHelper.h">
+      <Filter>界面\控件</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuinfomationdialog.h">
+      <Filter>界面\信息查看</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuparamwidget.h">
+      <Filter>界面\定值</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtureportwidget.h">
+      <Filter>界面\报告</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuprotactdlg.h">
+      <Filter>界面\报告\保护动作报告</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuexportwidget.h">
+      <Filter>界面\报告\报告导出</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuadjustwidget.h">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtumodifyadjustdlg.h">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuparamchannelDlg.h">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtucsprotocolexplain.h">
+      <Filter>界面\规约</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtucsprotocolwidget.h">
+      <Filter>界面\规约</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dturulefilewidget.h">
+      <Filter>界面\历史文件</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dturmctrlWidget.h">
+      <Filter>界面\控件\遥控</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dturmcwidget.h">
+      <Filter>界面\遥调遥控</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuonefixmodify.h">
+      <Filter>界面\点表管理\单点表修改</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtufixmodify.h">
+      <Filter>界面\点表管理</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtusoftinfodialog.h">
+      <Filter>界面\软件信息</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuinversiondialog.h">
+      <Filter>界面\软件信息\内部软件信息</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuupdateWidget.h">
+      <Filter>界面\软件配置\程序升级</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtucalibratetimedlg.h">
+      <Filter>界面\软件配置\时间设置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtugoosecfg.h">
+      <Filter>界面\软件配置\GOOSE设置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtumacaddress.h">
+      <Filter>界面\控件\MAC地址</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\protodialog.h">
+      <Filter>界面\控件\规约配置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuipaddress.h">
+      <Filter>界面\控件\IP地址</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuprotocfgdialog.h">
+      <Filter>界面\软件配置\规约配置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuarmconfigdialog.h">
+      <Filter>界面\软件配置\后台设置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtulinelossdialog.h">
+      <Filter>界面\软件配置\线损配置</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuarminfowidget.h">
+      <Filter>界面\信息查看\后台信息\硬盘信息</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtuterminalwidget.h">
+      <Filter>界面\终端</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\dtutestapiwidgetsclass.h">
+      <Filter>界面\测试</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuselfcheckprase.h">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuselfcheckinfo.h">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuoutput.h">
+      <Filter>界面\导出</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="base\qrc\font.qrc">
+      <Filter>main\resourse</Filter>
+    </QtRcc>
+    <QtRcc Include="base\qrc\image.qrc">
+      <Filter>main\resourse</Filter>
+    </QtRcc>
+    <QtRcc Include="src\other\main.qrc">
+      <Filter>main\resourse</Filter>
+    </QtRcc>
+    <QtRcc Include="base\qrc\qm.qrc">
+      <Filter>main\resourse</Filter>
+    </QtRcc>
+    <QtRcc Include="qss\qss.qrc">
+      <Filter>main\resourse</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qss\qss\blacksoft\add_bottom.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\add_left.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\add_right.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\add_top.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\arrow_bottom.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\arrow_left.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\arrow_top.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\arrow_right.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\image\bg_novideo.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft.css">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\branch_close.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\branch_open.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\calendar_nextmonth.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\calendar_prevmonth.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_checked.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_checked_disable.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_parcial.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_parcial_disable.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_unchecked.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\checkbox_unchecked_disable.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\font\fontawesome-webfont.ttf">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\font\iconfont.ttf">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_about.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_company.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_config.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_data.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_exit.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_main.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_help.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="src\other\image\main_person.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\menu_checked.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\font\pe-icon-set-weather.ttf">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\qm\qt_zh_CN.qm">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\radiobutton_checked.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\radiobutton_checked_disable.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\radiobutton_unchecked_disable.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="qss\qss\blacksoft\radiobutton_unchecked.png">
+      <Filter>main\resourse</Filter>
+    </None>
+    <None Include="base\qrc\qm\widgets.qm">
+      <Filter>main\resourse</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="frame">
+      <UniqueIdentifier>{27bb73ff-a603-4d40-8272-eee71b86b307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{919c3055-6e9a-4ea0-9710-c60ceddabbe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\Quihelper">
+      <UniqueIdentifier>{fabe3f27-1ace-46d3-90a5-e00902491297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\resourse">
+      <UniqueIdentifier>{23a5391f-bd60-4476-9163-4b5bebcaaef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具配置">
+      <UniqueIdentifier>{e0e2a30a-576d-4ddf-982d-04a8fa8f634b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面">
+      <UniqueIdentifier>{abd3d8a9-4ecb-4027-a80f-39fa6399b714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\连接管理">
+      <UniqueIdentifier>{00d2ff34-b1ac-4b73-ad18-91f05d2eea5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\连接管理\RPC通信">
+      <UniqueIdentifier>{873762ab-cd68-4b13-aa43-0027824827a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\信息查看">
+      <UniqueIdentifier>{5b0c2482-81ed-4a1c-9a54-81f990b1dd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能">
+      <UniqueIdentifier>{737f859c-2d44-497f-b406-33f470ae8dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能\总初始化">
+      <UniqueIdentifier>{bdc952c5-9784-4167-9c49-4b6b110b3600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件">
+      <UniqueIdentifier>{ff3334c8-08b2-4b9d-a8bc-431d9eadb61b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件\串口配置">
+      <UniqueIdentifier>{b407a814-6d02-45cb-b3cd-f863b465d7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能\任务">
+      <UniqueIdentifier>{a5356d8f-7015-479c-80e7-eb92bbbf8b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\定值">
+      <UniqueIdentifier>{0321ccb2-c4bb-4753-903f-20bda5cc8087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\报告">
+      <UniqueIdentifier>{08ed9e18-0381-4e59-b87a-6baf8039bbbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\报告\保护动作报告">
+      <UniqueIdentifier>{e812710d-4c50-418c-af86-ae4c4d14da7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\报告\报告导出">
+      <UniqueIdentifier>{3a7780e5-df1f-4c76-9eeb-2dc277119b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具配置\文件加载">
+      <UniqueIdentifier>{98ca0a41-33bf-4b9d-8596-329195a7497f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具配置\文件加载\json">
+      <UniqueIdentifier>{1b1ad1e4-b3dc-4625-b424-c25bf1a6c84c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="工具配置\文件加载\xml">
+      <UniqueIdentifier>{927430fe-60ff-4ec5-a2ee-de1dac0faa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\定值\定值整定">
+      <UniqueIdentifier>{73bfb70d-07a4-4a87-a4fc-2e7a71c22f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\规约">
+      <UniqueIdentifier>{4412b7c6-137f-4148-946b-160427d66d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\历史文件">
+      <UniqueIdentifier>{31c5d2da-0458-4bbc-823b-69580872d0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件\遥控">
+      <UniqueIdentifier>{a93e490a-e14b-4154-8e6a-d74249f71a04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\遥调遥控">
+      <UniqueIdentifier>{283911fc-6755-49ca-89df-4cc1b63247ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\点表管理">
+      <UniqueIdentifier>{79ec7bae-2c80-4f88-8722-aea26d9878c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\点表管理\单点表修改">
+      <UniqueIdentifier>{2e41cb5d-a435-4cdc-aa7a-30bf0d49bf35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件信息">
+      <UniqueIdentifier>{4a6a1d21-fcea-4d6f-89ca-a93d900731d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件信息\内部软件信息">
+      <UniqueIdentifier>{ec7f1910-9ff8-4a58-b5b4-af3f5056dbdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置">
+      <UniqueIdentifier>{6f3e65ee-2b7c-4a86-9abb-ea64c05035a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\时间设置">
+      <UniqueIdentifier>{162a9fc5-1981-437f-b883-a8e203a4d93c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\后台设置">
+      <UniqueIdentifier>{da70f19c-1aa0-43a8-9b34-4e92106bfe8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\GOOSE设置">
+      <UniqueIdentifier>{be2db5b0-37a9-4b9f-9835-c1b9568f677e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\程序升级">
+      <UniqueIdentifier>{aeb2889d-a2ae-4760-a672-0c8da871b3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件\MAC地址">
+      <UniqueIdentifier>{3793450e-6953-4dbf-9039-1b930a11265c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件\规约配置">
+      <UniqueIdentifier>{6d73cfe8-418f-4ade-94c2-61a57b10ca44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件\IP地址">
+      <UniqueIdentifier>{34baf9a7-146a-4190-8df4-9f5c36514833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\规约配置">
+      <UniqueIdentifier>{067717e1-7ec4-4d94-90c7-877c8bc4d1e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\软件配置\线损配置">
+      <UniqueIdentifier>{36025651-1f55-4681-b7fb-3b4016705a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\信息查看\后台信息">
+      <UniqueIdentifier>{a32b506f-f318-4799-b0ff-97d79f60dbd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\信息查看\后台信息\硬盘信息">
+      <UniqueIdentifier>{a2e6548d-5d6b-4861-84d3-103560aff6d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main\图标">
+      <UniqueIdentifier>{1c809fd2-bc29-473e-afaa-0e8471c706ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\终端">
+      <UniqueIdentifier>{c9cc3b06-64ad-46d6-9ef5-5c8c5f02aced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\测试">
+      <UniqueIdentifier>{5133d5c8-b2c6-48ae-b8a5-feb1eda296f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\历史文件\自检文件解析">
+      <UniqueIdentifier>{6c5845d8-4dc1-44fe-90d3-d9fdb1783245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\导出">
+      <UniqueIdentifier>{8bb59582-ecf9-49fa-bd0e-db4941e7529e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\form\frmmain.ui">
+      <Filter>frame</Filter>
+    </QtUic>
+    <QtUic Include="widget\serialdialog.ui">
+      <Filter>界面\控件\串口配置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuconnectdialog.ui">
+      <Filter>界面\连接管理</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuinfomationdialog.ui">
+      <Filter>界面\信息查看</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuparamwidget.ui">
+      <Filter>界面\定值</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtureportwidget.ui">
+      <Filter>界面\报告</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuprotactdlg.ui">
+      <Filter>界面\报告\保护动作报告</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuexportwidget.ui">
+      <Filter>界面\报告\报告导出</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuadjustwidget.ui">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtumodifyadjustdlg.ui">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuparamchannelDlg.ui">
+      <Filter>界面\定值\定值整定</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtucsprotocolexplain.ui">
+      <Filter>界面\规约</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtucsprotocolwidget.ui">
+      <Filter>界面\规约</Filter>
+    </QtUic>
+    <QtUic Include="widget\dturulefilewidget.ui">
+      <Filter>界面\历史文件</Filter>
+    </QtUic>
+    <QtUic Include="widget\dturmcwidget.ui">
+      <Filter>界面\遥调遥控</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuonefixmodify.ui">
+      <Filter>界面\点表管理\单点表修改</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtufixmodify.ui">
+      <Filter>界面\点表管理</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtusoftinfodialog.ui">
+      <Filter>界面\软件信息</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuinversiondialog.ui">
+      <Filter>界面\软件信息\内部软件信息</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuupdateWidget.ui">
+      <Filter>界面\软件配置\程序升级</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtucalibratetimedlg.ui">
+      <Filter>界面\软件配置\时间设置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtugoosecfg.ui">
+      <Filter>界面\软件配置\GOOSE设置</Filter>
+    </QtUic>
+    <QtUic Include="widget\protodialog.ui">
+      <Filter>界面\控件\规约配置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuprotocfgdialog.ui">
+      <Filter>界面\软件配置\规约配置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuarmconfigdialog.ui">
+      <Filter>界面\软件配置\后台设置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtulinelossdialog.ui">
+      <Filter>界面\软件配置\线损配置</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuarminfowidget.ui">
+      <Filter>界面\信息查看\后台信息\硬盘信息</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtuterminalwidget.ui">
+      <Filter>界面\终端</Filter>
+    </QtUic>
+    <QtUic Include="widget\dtutestapiwidgetsclass.ui">
+      <Filter>界面\测试</Filter>
+    </QtUic>
+    <QtUic Include="dtuselfcheckprase.ui">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </QtUic>
+    <QtUic Include="dtuselfcheckinfo.ui">
+      <Filter>界面\历史文件\自检文件解析</Filter>
+    </QtUic>
+    <QtUic Include="dtuoutput.ui">
+      <Filter>界面\导出</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\other\image\unlink.png">
+      <Filter>main\resourse</Filter>
+    </Image>
+    <Image Include="src\other\image\link.png">
+      <Filter>main\resourse</Filter>
+    </Image>
+    <Image Include="src\other\image\LOGO.ico">
+      <Filter>main\图标</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DTUTool.rc">
+      <Filter>main\图标</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\dialog\temp\moc\moc_predefs.h.cbt">
+      <Filter>main</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

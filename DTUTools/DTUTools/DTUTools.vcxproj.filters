@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="界面">
+      <UniqueIdentifier>{66c131ea-38a0-44d0-849f-7bacc6b84ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件">
+      <UniqueIdentifier>{58df745a-fe2f-4cc6-a11c-0c6cd85de55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务">
+      <UniqueIdentifier>{6b01e3eb-8939-431c-afc1-04d8351efbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="配置">
+      <UniqueIdentifier>{1adc1e82-f105-4482-bb76-2925e32690bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JSON">
+      <UniqueIdentifier>{1733498b-883d-49d3-ab23-96a94175dbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主框架">
+      <UniqueIdentifier>{241f45df-0139-4a41-9cd4-163ab5ecb1db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="界面\版本升级">
+      <UniqueIdentifier>{89e76aee-d7b5-4c9e-8e1f-7035f9477fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\校时">
+      <UniqueIdentifier>{cf441425-d397-4188-a448-3fb1a5048365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="通信">
+      <UniqueIdentifier>{36768b40-331b-401f-82ac-1a055414da6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\版本信息">
+      <UniqueIdentifier>{6aeebcdf-a1c6-4313-8e8f-55a6eb611c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\GOOSE配置">
+      <UniqueIdentifier>{bddda5d5-4b25-4315-a2ef-b8a598152497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单">
+      <UniqueIdentifier>{d9210ea5-5cb0-4d61-9093-a92bbba8f98d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\规约历史文件">
+      <UniqueIdentifier>{8ef180de-f4da-4bc1-a9e5-0a0e1ba2e2ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\遥控">
+      <UniqueIdentifier>{1e366d1e-655a-464f-9300-9fa79080a6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\点表修改">
+      <UniqueIdentifier>{f80366b2-31c0-4bfe-bbb5-8a169da61aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\报告">
+      <UniqueIdentifier>{66af0ae5-adba-435c-bb59-90b216b7d546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\报告\保护动作报告">
+      <UniqueIdentifier>{268336e2-c5e3-49df-8712-3f0d35a39d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\整定定值">
+      <UniqueIdentifier>{9b7c4cd6-5302-4107-98f4-36e804b1002e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\定值">
+      <UniqueIdentifier>{375e1113-a087-4440-9672-0644f55ca1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\主菜单\信息查看">
+      <UniqueIdentifier>{70cd0e55-9732-4ff3-bdad-d582028276b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\系统配置">
+      <UniqueIdentifier>{6910630b-ccbc-46e8-be31-ca1f31120fad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\导出">
+      <UniqueIdentifier>{eb607ecd-f605-4302-9a22-129ff18079a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\规约报文">
+      <UniqueIdentifier>{45dc1c31-9cee-4747-bd0d-50f54afa87dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="界面\控件窗口">
+      <UniqueIdentifier>{6df2f484-836c-4c29-b9ab-8a798a592c29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="dtutools.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="dtusysconfigwidget.cpp">
+      <Filter>界面\系统配置</Filter>
+    </ClCompile>
+    <ClCompile Include="create_control.cpp">
+      <Filter>界面\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="dtutask.cpp">
+      <Filter>任务</Filter>
+    </ClCompile>
+    <ClCompile Include="dtusysconfig.cpp">
+      <Filter>配置</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtuconfigure\jsoncpp.cpp">
+      <Filter>JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="dtutools.cpp">
+      <Filter>界面\主框架</Filter>
+    </ClCompile>
+    <ClCompile Include="dtutask_notify.cpp">
+      <Filter>任务</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuprotactdlg.cpp">
+      <Filter>界面\主菜单\报告\保护动作报告</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuversiondlg.cpp">
+      <Filter>界面\版本信息</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuadjustwidget.cpp">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuparamchannelDlg.cpp">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuupdateWidget.cpp">
+      <Filter>界面\版本升级</Filter>
+    </ClCompile>
+    <ClCompile Include="dtumodifyadjustdlg.cpp">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </ClCompile>
+    <ClCompile Include="dtucalibratetimedlg.cpp">
+      <Filter>界面\校时</Filter>
+    </ClCompile>
+    <ClCompile Include="dturpcclient.cpp">
+      <Filter>通信</Filter>
+    </ClCompile>
+    <ClCompile Include="dtucsprotocolwidget.cpp">
+      <Filter>界面\规约报文</Filter>
+    </ClCompile>
+    <ClCompile Include="dtubuildverwidget.cpp">
+      <Filter>界面\版本信息</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuarmconfigwidget.cpp">
+      <Filter>界面\系统配置</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuipaddress.cpp">
+      <Filter>界面\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="dturmctrlWidget.cpp">
+      <Filter>界面\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="dtumacaddress.cpp">
+      <Filter>界面\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="dtugoosecfg.cpp">
+      <Filter>界面\GOOSE配置</Filter>
+    </ClCompile>
+    <ClCompile Include="dtufixmodify.cpp">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </ClCompile>
+    <ClCompile Include="dturulefilewidget.cpp">
+      <Filter>界面\主菜单\规约历史文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dtumainmenu.cpp">
+      <Filter>界面\主菜单</Filter>
+    </ClCompile>
+    <ClCompile Include="dtureportwidget.cpp">
+      <Filter>界面\主菜单\报告</Filter>
+    </ClCompile>
+    <ClCompile Include="dturmcwidget.cpp">
+      <Filter>界面\主菜单\遥控</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuparamwidget.cpp">
+      <Filter>界面\主菜单\定值</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuinformationwidget.cpp">
+      <Filter>界面\主菜单\信息查看</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuonefixmodify.cpp">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </ClCompile>
+    <ClCompile Include="dtuexportwidget.cpp">
+      <Filter>界面\导出</Filter>
+    </ClCompile>
+    <ClCompile Include="dtucsprotocolexplain.cpp">
+      <Filter>界面\规约报文</Filter>
+    </ClCompile>
+    <ClCompile Include="function\protodialog.cpp">
+      <Filter>界面\控件窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="function\serialdialog.cpp">
+      <Filter>界面\控件窗口</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="dtusysconfigwidget.h">
+      <Filter>界面\系统配置</Filter>
+    </QtMoc>
+    <QtMoc Include="create_control.h">
+      <Filter>界面\控件</Filter>
+    </QtMoc>
+    <QtMoc Include="dtutools.h">
+      <Filter>界面\主框架</Filter>
+    </QtMoc>
+    <QtMoc Include="dtutask_notify.h">
+      <Filter>任务</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuprotactdlg.h">
+      <Filter>界面\主菜单\报告\保护动作报告</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuversiondlg.h">
+      <Filter>界面\版本信息</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuadjustwidget.h">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuparamchannelDlg.h">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuupdateWidget.h">
+      <Filter>界面\版本升级</Filter>
+    </QtMoc>
+    <QtMoc Include="dtumodifyadjustdlg.h">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtMoc>
+    <QtMoc Include="dtucalibratetimedlg.h">
+      <Filter>界面\校时</Filter>
+    </QtMoc>
+    <QtMoc Include="dturpcclient.h">
+      <Filter>通信</Filter>
+    </QtMoc>
+    <QtMoc Include="dtucsprotocolwidget.h">
+      <Filter>界面\规约报文</Filter>
+    </QtMoc>
+    <QtMoc Include="dtubuildverwidget.h">
+      <Filter>界面\版本信息</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuarmconfigwidget.h">
+      <Filter>界面\系统配置</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuipaddress.h">
+      <Filter>界面\控件</Filter>
+    </QtMoc>
+    <QtMoc Include="dturmctrlWidget.h">
+      <Filter>界面\控件</Filter>
+    </QtMoc>
+    <QtMoc Include="dtumacaddress.h">
+      <Filter>界面\控件</Filter>
+    </QtMoc>
+    <QtMoc Include="dtugoosecfg.h">
+      <Filter>界面\GOOSE配置</Filter>
+    </QtMoc>
+    <QtMoc Include="dtufixmodify.h">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </QtMoc>
+    <QtMoc Include="dturulefilewidget.h">
+      <Filter>界面\主菜单\规约历史文件</Filter>
+    </QtMoc>
+    <QtMoc Include="dtumainmenu.h">
+      <Filter>界面\主菜单</Filter>
+    </QtMoc>
+    <QtMoc Include="dtureportwidget.h">
+      <Filter>界面\主菜单\报告</Filter>
+    </QtMoc>
+    <QtMoc Include="dturmcwidget.h">
+      <Filter>界面\主菜单\遥控</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuparamwidget.h">
+      <Filter>界面\主菜单\定值</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuinformationwidget.h">
+      <Filter>界面\主菜单\信息查看</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuonefixmodify.h">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </QtMoc>
+    <QtMoc Include="dtuexportwidget.h">
+      <Filter>界面\导出</Filter>
+    </QtMoc>
+    <QtMoc Include="dtucsprotocolexplain.h">
+      <Filter>界面\规约报文</Filter>
+    </QtMoc>
+    <QtMoc Include="function\protodialog.h">
+      <Filter>界面\控件窗口</Filter>
+    </QtMoc>
+    <QtMoc Include="function\serialdialog.h">
+      <Filter>界面\控件窗口</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="dtusysconfigwidget.ui">
+      <Filter>界面\系统配置</Filter>
+    </QtUic>
+    <QtUic Include="dtutools.ui">
+      <Filter>界面\主框架</Filter>
+    </QtUic>
+    <QtUic Include="dtuprotactdlg.ui">
+      <Filter>界面\主菜单\报告\保护动作报告</Filter>
+    </QtUic>
+    <QtUic Include="dtuversiondlg.ui">
+      <Filter>界面\版本信息</Filter>
+    </QtUic>
+    <QtUic Include="dtuadjustwidget.ui">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtUic>
+    <QtUic Include="dtuparamchannelDlg.ui">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtUic>
+    <QtUic Include="dtuupdateWidget.ui">
+      <Filter>界面\版本升级</Filter>
+    </QtUic>
+    <QtUic Include="dtumodifyadjustdlg.ui">
+      <Filter>界面\主菜单\整定定值</Filter>
+    </QtUic>
+    <QtUic Include="dtucalibratetimedlg.ui">
+      <Filter>界面\校时</Filter>
+    </QtUic>
+    <QtUic Include="dtucsprotocolwidget.ui">
+      <Filter>界面\规约报文</Filter>
+    </QtUic>
+    <QtUic Include="dtubuildverwidget.ui">
+      <Filter>界面\版本信息</Filter>
+    </QtUic>
+    <QtUic Include="dtuarmconfigwidget.ui">
+      <Filter>界面\系统配置</Filter>
+    </QtUic>
+    <QtUic Include="dtugoosecfg.ui">
+      <Filter>界面\GOOSE配置</Filter>
+    </QtUic>
+    <QtUic Include="dtufixmodify.ui">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </QtUic>
+    <QtUic Include="dturulefilewidget.ui">
+      <Filter>界面\主菜单\规约历史文件</Filter>
+    </QtUic>
+    <QtUic Include="dtumainmenu.ui">
+      <Filter>界面\主菜单</Filter>
+    </QtUic>
+    <QtUic Include="dtureportwidget.ui">
+      <Filter>界面\主菜单\报告</Filter>
+    </QtUic>
+    <QtUic Include="dturmcwidget.ui">
+      <Filter>界面\主菜单\遥控</Filter>
+    </QtUic>
+    <QtUic Include="dtuparamwidget.ui">
+      <Filter>界面\主菜单\定值</Filter>
+    </QtUic>
+    <QtUic Include="dtuinformationwidget.ui">
+      <Filter>界面\主菜单\信息查看</Filter>
+    </QtUic>
+    <QtUic Include="dtuonefixmodify.ui">
+      <Filter>界面\主菜单\点表修改</Filter>
+    </QtUic>
+    <QtUic Include="dtuexportwidget.ui">
+      <Filter>界面\导出</Filter>
+    </QtUic>
+    <QtUic Include="dtucsprotocolexplain.ui">
+      <Filter>界面\规约报文</Filter>
+    </QtUic>
+    <QtUic Include="function\protodialog.ui">
+      <Filter>界面\控件窗口</Filter>
+    </QtUic>
+    <QtUic Include="function\serialdialog.ui">
+      <Filter>界面\控件窗口</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dtutask.h">
+      <Filter>任务</Filter>
+    </ClInclude>
+    <ClInclude Include="dtusysconfig.h">
+      <Filter>配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\json\json.h">
+      <Filter>JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\json\json-forwards.h">
+      <Filter>JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="dtucsprotocolanalysis.h">
+      <Filter>界面\规约报文</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DTUTools.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon\LOGO.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dbmanager">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="recorder">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="report">
+      <UniqueIdentifier>{f4f812e2-e06c-42b2-b48c-725436cd13aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite3">
+      <UniqueIdentifier>{3483089e-ff39-408e-b82e-e246d10cd5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="storage">
+      <UniqueIdentifier>{3813b42b-3968-4295-af43-140f250c8884}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\libdtustorage\dtudbmanager.cpp">
+      <Filter>dbmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtustorage\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtustorage\dtustorage.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\thirdparty\include\sqlite3\sqlite3.c">
+      <Filter>sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtustorage\dtureportstorage.cpp">
+      <Filter>report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtustorage\dturecorder.cpp">
+      <Filter>recorder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtuconfigure\dtuioamap.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\libdtustorage\dtudbmanager.h">
+      <Filter>dbmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtustorage\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtustorage\json\json-forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtustorage\dtustorage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\thirdparty\include\sqlite3\sqlite3.h">
+      <Filter>sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtustorage\dtureportstorage.h">
+      <Filter>report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtustorage\dturecorder.h">
+      <Filter>recorder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtuconfigure\dtuioamap.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

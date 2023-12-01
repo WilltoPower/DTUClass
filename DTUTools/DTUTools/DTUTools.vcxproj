@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76E62338-9BC8-4BCC-B87D-2001A1FB9645}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>DTUTools</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>QT510</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>QT510</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>$(Qt_LIBPATH_);../lib/x64/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(Qt_LIBS_);dtuconfigure.lib;dtubase.lib;rpc.lib;dtucomm.lib;dtustorage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(Qt_INCLUDEPATH_);..\..\libdtubase;..\..\libdtuconfigure;..\..\include\;..\..\libdtucomm;..\include;..\..\thirdparty\include;.\;..\..\libdtustorage;..\..\thirdparty\include\msgpack\;..\..\thirdparty\include\asio\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>$(Qt_DEFINES_);PUGIXML_HEADER_ONLY;ASIO_STANDALONE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>$(Qt_LIBPATH_);../lib/x64/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(Qt_LIBS_);dtuconfigure.lib;dtubase.lib;rpc.lib;dtucomm.lib;dtustorage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>
+      </StackReserveSize>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(Qt_INCLUDEPATH_);..\..\libdtubase;..\..\libdtuconfigure;..\..\include\;..\..\libdtucomm\;..\include;..\..\thirdparty\include;.\;..\..\libdtustorage;..\..\thirdparty\include\msgpack\;..\..\thirdparty\include\asio\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>$(Qt_DEFINES_);PUGIXML_HEADER_ONLY;ASIO_STANDALONE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions> /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtRcc Include="dtutools.qrc" />
+    <QtUic Include="dtuadjustwidget.ui" />
+    <QtUic Include="dtuarmconfigwidget.ui" />
+    <QtUic Include="dtubuildverwidget.ui" />
+    <QtUic Include="dtucalibratetimedlg.ui" />
+    <QtUic Include="dtucsprotocolexplain.ui" />
+    <QtUic Include="dtucsprotocolwidget.ui" />
+    <QtUic Include="dtuexportwidget.ui" />
+    <QtUic Include="dtufixmodify.ui" />
+    <QtUic Include="dtugoosecfg.ui" />
+    <QtUic Include="dtuinformationwidget.ui" />
+    <QtUic Include="dtumainmenu.ui" />
+    <QtUic Include="dtumodifyadjustdlg.ui" />
+    <QtUic Include="dtuonefixmodify.ui" />
+    <QtUic Include="dtuparamwidget.ui" />
+    <QtUic Include="dtuparamchannelDlg.ui" />
+    <QtUic Include="dtuprotactdlg.ui" />
+    <QtUic Include="dtureportwidget.ui" />
+    <QtUic Include="dturmcwidget.ui" />
+    <QtUic Include="dturulefilewidget.ui" />
+    <QtUic Include="dtusysconfigwidget.ui" />
+    <QtUic Include="dtutools.ui" />
+    <QtMoc Include="dtutools.h" />
+    <ClCompile Include="..\..\libdtuconfigure\jsoncpp.cpp" />
+    <ClCompile Include="create_control.cpp" />
+    <ClCompile Include="dtuadjustwidget.cpp" />
+    <ClCompile Include="dtuarmconfigwidget.cpp" />
+    <ClCompile Include="dtubuildverwidget.cpp" />
+    <ClCompile Include="dtucalibratetimedlg.cpp" />
+    <ClCompile Include="dtucsprotocolexplain.cpp" />
+    <ClCompile Include="dtucsprotocolwidget.cpp" />
+    <ClCompile Include="dtuexportwidget.cpp" />
+    <ClCompile Include="dtufixmodify.cpp" />
+    <ClCompile Include="dtugoosecfg.cpp" />
+    <ClCompile Include="dtuinformationwidget.cpp" />
+    <ClCompile Include="dtuipaddress.cpp" />
+    <ClCompile Include="dtumacaddress.cpp" />
+    <ClCompile Include="dtumainmenu.cpp" />
+    <ClCompile Include="dtumodifyadjustdlg.cpp" />
+    <ClCompile Include="dtuonefixmodify.cpp" />
+    <ClCompile Include="dtuparamwidget.cpp" />
+    <ClCompile Include="dtuparamchannelDlg.cpp" />
+    <ClCompile Include="dtuprotactdlg.cpp" />
+    <ClCompile Include="dtureportwidget.cpp" />
+    <ClCompile Include="dturmctrlWidget.cpp" />
+    <ClCompile Include="dturmcwidget.cpp" />
+    <ClCompile Include="dturpcclient.cpp" />
+    <ClCompile Include="dturulefilewidget.cpp" />
+    <ClCompile Include="dtusysconfig.cpp" />
+    <ClCompile Include="dtusysconfigwidget.cpp" />
+    <ClCompile Include="dtutask.cpp" />
+    <ClCompile Include="dtutask_notify.cpp" />
+    <ClCompile Include="dtutools.cpp" />
+    <ClCompile Include="dtuupdateWidget.cpp" />
+    <ClCompile Include="dtuversiondlg.cpp" />
+    <ClCompile Include="function\protodialog.cpp" />
+    <ClCompile Include="function\serialdialog.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="dtuupdateWidget.ui" />
+    <QtUic Include="dtuversiondlg.ui" />
+    <QtUic Include="function\protodialog.ui" />
+    <QtUic Include="function\serialdialog.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="dtusysconfigwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="create_control.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libdtuconfigure\json\json-forwards.h" />
+    <ClInclude Include="..\..\libdtuconfigure\json\json.h" />
+    <QtMoc Include="dturmctrlWidget.h" />
+    <QtMoc Include="dtumacaddress.h" />
+    <QtMoc Include="dtugoosecfg.h" />
+    <QtMoc Include="dtureportwidget.h" />
+    <QtMoc Include="dturulefilewidget.h" />
+    <QtMoc Include="dtufixmodify.h" />
+    <QtMoc Include="dtumainmenu.h" />
+    <QtMoc Include="dtuparamwidget.h" />
+    <QtMoc Include="dtuinformationwidget.h" />
+    <QtMoc Include="dturmcwidget.h" />
+    <QtMoc Include="dtuonefixmodify.h" />
+    <QtMoc Include="dtuexportwidget.h" />
+    <QtMoc Include="dtucsprotocolexplain.h" />
+    <QtMoc Include="function\protodialog.h" />
+    <QtMoc Include="function\serialdialog.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="dtucsprotocolwidget.h" />
+    <QtMoc Include="dtuupdateWidget.h" />
+    <QtMoc Include="dtuversiondlg.h" />
+    <QtMoc Include="dtutask_notify.h" />
+    <QtMoc Include="dtuprotactdlg.h" />
+    <QtMoc Include="dtuadjustwidget.h" />
+    <QtMoc Include="dtuparamchannelDlg.h" />
+    <QtMoc Include="dtumodifyadjustdlg.h" />
+    <QtMoc Include="dtucalibratetimedlg.h" />
+    <QtMoc Include="dturpcclient.h" />
+    <QtMoc Include="dtuipaddress.h" />
+    <QtMoc Include="dtubuildverwidget.h" />
+    <QtMoc Include="dtuarmconfigwidget.h" />
+    <ClInclude Include="dtucsprotocolanalysis.h" />
+    <ClInclude Include="dtusysconfig.h" />
+    <ClInclude Include="dtutask.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DTUTools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon\LOGO.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

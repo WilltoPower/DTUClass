@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<adjust>
+	<channel no="1" ratio="2" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="2" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="3" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="4" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="5" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="6" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="7" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="8" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="9" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="10" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="11" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="12" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="13" ratio="1" intercept="0.000889992982" zero="0" angle="0" />
+	<channel no="14" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="15" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="16" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="17" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="18" ratio="1" intercept="0" zero="0" angle="0" />
+	<channel no="19" ratio="1" intercept="0" zero="0" angle="0" />
+</adjust>

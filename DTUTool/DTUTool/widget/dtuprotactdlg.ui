@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtuprotactdlg</class>
+ <widget class="QDialog" name="dtuprotactdlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dtuprotactdlg</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="group_protact_event">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>保护动作事件</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="tableWidget_prot_event">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string>时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>动作</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="group_detail">
+     <property name="title">
+      <string>详细信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="tableWidget_prot_detail">
+        <column>
+         <property name="text">
+          <string>内容</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>值</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tableWidget_prot_event</sender>
+   <signal>itemClicked(QTableWidgetItem*)</signal>
+   <receiver>dtuprotactdlg</receiver>
+   <slot>show_protect_detail(QTableWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>-55</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_protect_detail(QTableWidgetItem*)</slot>
+ </slots>
+</ui>

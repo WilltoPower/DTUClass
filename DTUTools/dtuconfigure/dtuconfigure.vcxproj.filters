@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sysconfig">
+      <UniqueIdentifier>{58564ba5-5768-42f0-91dd-95e707c3034c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sysconfig\json">
+      <UniqueIdentifier>{3096ed83-5ed4-41f3-b11f-bf059767e679}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libdtuconfigure\jsoncpp.cpp">
+      <Filter>sysconfig\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtuconfigure\dtusystemconfig.cpp">
+      <Filter>sysconfig</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libdtuconfigure\json\json.h">
+      <Filter>sysconfig\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\json\json-forwards.h">
+      <Filter>sysconfig\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtuconfigure\dtusystemconfig.h">
+      <Filter>sysconfig</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

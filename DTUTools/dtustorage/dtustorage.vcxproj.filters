@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="json">
+      <UniqueIdentifier>{a691b0c2-a658-46cf-a39e-d5f1f9f325cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="report">
+      <UniqueIdentifier>{7bf58084-c3cb-43b6-9849-e718f4d45de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="storage">
+      <UniqueIdentifier>{46dd337a-4e73-4e20-8691-a634fe8350e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbmanager">
+      <UniqueIdentifier>{28779679-aacc-47da-b458-f602a7b6e39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite3">
+      <UniqueIdentifier>{f224885d-589a-46b2-97a5-7ad7fe63ca53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="recorder">
+      <UniqueIdentifier>{7d1c3b0c-0c9b-4071-b12e-d917d69f6128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libdtustorage\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtustorage\dtureportstorage.cpp">
+      <Filter>report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtustorage\dtustorage.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtustorage\dtudbmanager.cpp">
+      <Filter>dbmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\thirdparty\include\sqlite3\sqlite3.c">
+      <Filter>sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libdtustorage\dturecorder.cpp">
+      <Filter>recorder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libdtustorage\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\json\json-forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\dtureportstorage.h">
+      <Filter>report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\dtustorage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\dtustoragedef.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\dtudbmanager.h">
+      <Filter>dbmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thirdparty\include\sqlite3\sqlite3.h">
+      <Filter>sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libdtustorage\dturecorder.h">
+      <Filter>recorder</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

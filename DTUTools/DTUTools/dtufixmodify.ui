@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtufixmodifyClass</class>
+ <widget class="QWidget" name="dtufixmodifyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dtufixmodify</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="Text_1">
+     <property name="text">
+      <string>当前点表内容：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="combox_index">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>30</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>遥信点表</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>遥测点表</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>遥控点表</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>遥调点表</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="TEXT">
+     <property name="text">
+      <string>检索:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>260</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>260</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QPushButton" name="btn_search">
+     <property name="text">
+      <string>搜索</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_result">
+     <property name="text">
+      <string>结果共0项</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QLabel" name="label_page">
+     <property name="text">
+      <string>当前第0项</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QPushButton" name="btn_front">
+     <property name="text">
+      <string>上一个</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="9">
+    <widget class="QPushButton" name="btn_next">
+     <property name="text">
+      <string>下一个</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="10">
+    <widget class="QWidget" name="widget" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_search</sender>
+   <signal>clicked()</signal>
+   <receiver>dtufixmodifyClass</receiver>
+   <slot>serach()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1026</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_next</sender>
+   <signal>clicked()</signal>
+   <receiver>dtufixmodifyClass</receiver>
+   <slot>next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1019</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_front</sender>
+   <signal>clicked()</signal>
+   <receiver>dtufixmodifyClass</receiver>
+   <slot>front()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>919</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combox_index</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>dtufixmodifyClass</receiver>
+   <slot>indexchange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>167</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>541</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>serach()</slot>
+  <slot>front()</slot>
+  <slot>next()</slot>
+  <slot>indexchange(int)</slot>
+ </slots>
+</ui>

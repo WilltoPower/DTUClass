@@ -1,0 +1,21 @@
+﻿#ifndef _DTU_VERSION_H_
+#define _DTU_VERSION_H_
+
+#include <string>
+
+#define MAIN_VERSION @MAIN_VERSION@
+#define SUB_VERSION @SUB_VERSION@
+#define INNER_VERSION @INNER_VERSION@
+#define STAGE_VERSION @STAGE_VERSION@
+#define CMAKE_TIME "@COMPILE_TIME@"
+
+#define COMPILE_TIME std::string(__DATE__) + " " + std::string(__TIME__)
+
+struct ARMVersion {
+	const std::string armversion = "V" + std::to_string(MAIN_VERSION) + ".R" + std::to_string(SUB_VERSION) + ".C" + 
+                                std::to_string(INNER_VERSION) + ".B" + std::to_string(STAGE_VERSION);
+	const std::string compiletime = COMPILE_TIME;
+	const std::string cmaketime = std::string(CMAKE_TIME);
+};
+
+#endif

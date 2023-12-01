@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="buffer">
+      <UniqueIdentifier>{fc25273a-33ea-4115-81f1-2bdbdd806293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{54ebddd4-1f8d-4ea4-ae3e-45d6bf78dfcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{3d1f7bc7-f730-4d0f-869b-0f03f8dd722b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configure">
+      <UniqueIdentifier>{a6dc337a-6908-4e79-bc50-f9d12ce3ba38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\libdtubase\dtubuffer.cpp">
+      <Filter>buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtubase\dtulog.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtubase\dtucommon.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtubase\dtustructs.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\libdtuconfigure\dtusystemconfig.cpp">
+      <Filter>configure</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\libdtubase\dtubuffer.h">
+      <Filter>buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtubase\dtulog.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtubase\dtucommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtubase\dtustructs.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\libdtuconfigure\dtusystemconfig.h">
+      <Filter>configure</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

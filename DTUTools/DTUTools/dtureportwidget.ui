@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtureportClass</class>
+ <widget class="QWidget" name="dtureportClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>dtureport</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="5">
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>686</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="4">
+    <widget class="QSpinBox" name="spin_page">
+     <property name="minimumSize">
+      <size>
+       <width>50</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btn_clear">
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>清空</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="btn_update">
+     <property name="minimumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>93</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>更新</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btn_pack">
+     <property name="text">
+      <string>导出</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_update</sender>
+   <signal>clicked()</signal>
+   <receiver>dtureportClass</receiver>
+   <slot>updatereport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>853</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>dtureportClass</receiver>
+   <slot>clearreport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>753</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spin_page</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>dtureportClass</receiver>
+   <slot>page_changed(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1032</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_pack</sender>
+   <signal>clicked()</signal>
+   <receiver>dtureportClass</receiver>
+   <slot>packdata()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>updatereport()</slot>
+  <slot>clearreport()</slot>
+  <slot>page_changed(int)</slot>
+  <slot>packdata()</slot>
+ </slots>
+</ui>

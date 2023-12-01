@@ -1,0 +1,364 @@
+{
+	"unittype" : 1,
+    "localrpcport" : 6000,
+    "devno" : 1,
+    "linkaddr" : 1,
+    "piclinkaddr" :1,
+    "iedName" : "HPS2201X",
+    "public" : {
+        "destasdu" : 1,
+        "protocol" : 2,
+        "rpcip" : "192.168.168.100",
+        "rpcport" : 6000
+    },
+	"bay" : {
+		"remote" : [
+			{
+                "used" : false,
+				"asdu" : 1,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr" : 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			},
+			{
+                "used" : false,
+				"asdu" : 2,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr" : 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			},
+			{
+                "used" : false,
+				"asdu" : 3,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr": 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			},
+			{
+                "used" : false,
+				"asdu" : 4,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr" : 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			},
+			{
+                "used" : false,
+				"asdu" : 5,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr" : 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			},
+			{
+                "used" : false,
+				"asdu" : 6,
+                "protocol" : 2,
+                "CS101" : {
+                    "mode" : 0,
+                    "otheraddr" : 2,
+                    "serial" : "/dev/ttyS1",
+                    "baudrate" : 9600,
+                    "databits" : 8,
+                    "pairty" : 0,
+                    "stopbits" : 1,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "LinkLayerParameters" : {
+                        "LinkAddrLength" : 1,
+                        "SingalCharACK" : true,
+                        "TimeoutForACK" : 500,
+                        "TimeoutForRepeat" : 1000
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "CS104" : {
+                    "localIP" : "0.0.0.0",
+                    "port" : 2404,
+                    "AppLayerParameters" : {
+                        "sizeOfCOT" : 2,
+                        "sizeOfCA" : 2,
+                        "sizeOfIOA" : 3,
+                        "MeasuredValueType" : 1,
+                        "TelegramValueType" : 1
+                    },
+                    "ExtraParameters" : {
+                        "isSequence" : true
+                    }
+                },
+                "RPC" : {
+                    "ip" : "192.168.168.101",
+                    "port" : 6000
+                }
+			}
+		]
+	},
+	"mcu" : {
+		"serial" : "/dev/ttyS7",
+		"baudrate" : 115200
+	},
+	"pic100" : {
+		"used" : true,
+		"CS101" : {
+			"mode" : 0,
+            "otheraddr":2,
+			"serial" : "/dev/ttyS1",
+			"baudrate" : 9600,
+			"databits" : 8,
+			"pairty" : 0,
+			"stopbits" : 1,
+            "AppLayerParameters" : {
+                "sizeOfCOT" : 2,
+                "sizeOfCA" : 2,
+                "sizeOfIOA" : 3,
+                "MeasuredValueType" : 1,
+                "TelegramValueType" : 1
+            },
+            "LinkLayerParameters" : {
+                "LinkAddrLength" : 1,
+                "SingalCharACK" : true,
+                "TimeoutForACK" : 500,
+                "TimeoutForRepeat" : 1000
+            },
+            "ExtraParameters" : {
+                "isSequence" : true
+            }
+		}
+	},
+	"autotime" : {
+		"used" : true,
+		"interval" : 15
+	},
+    "mac" : [
+        {
+            "use" : true,
+            "eth" : "eth0",
+            "mac" : "E6:10:08:27:A0:01"
+        },
+        {
+            "use" : true,
+            "eth" : "eth1",
+            "mac" : "E6:10:08:27:A0:02"
+        },
+        {
+            "use" : true,
+            "eth" : "eth2",
+            "mac" : "E6:10:08:27:A0:03"
+        },
+        {
+            "use" : true,
+            "eth" : "eth3",
+            "mac" : "E6:10:08:27:A0:04"
+        }
+    ]
+}

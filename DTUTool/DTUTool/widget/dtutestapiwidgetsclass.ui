@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtuTestAPIWidgetsClassClass</class>
+ <widget class="QWidget" name="dtuTestAPIWidgetsClassClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dtuTestAPIWidgetsClass</string>
+  </property>
+  <widget class="QPushButton" name="btn_test">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>300</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>测试</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lab1">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>120</y>
+     <width>211</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_test</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuTestAPIWidgetsClassClass</receiver>
+   <slot>TESTAPI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>TESTAPI()</slot>
+ </slots>
+</ui>

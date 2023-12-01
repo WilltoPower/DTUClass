@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtuupdateWidget</class>
+ <widget class="QWidget" name="dtuupdateWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>810</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>系统升级</string>
+  </property>
+  <widget class="QGroupBox" name="group_update">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>794</width>
+     <height>254</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>系统升级</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="checkBox_dsp">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_dsp">
+        <property name="text">
+         <string>升级DSP:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lineEdit_dsp">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="btn_dsp">
+        <property name="text">
+         <string>选择</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCheckBox" name="checkBox_system">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_system">
+        <property name="text">
+         <string>升级系统:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="lineEdit_system">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="btn_system">
+        <property name="text">
+         <string>选择</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QCheckBox" name="checkBox_arm">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_arm">
+        <property name="minimumSize">
+         <size>
+          <width>78</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>升级ARM:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="lineEdit_arm">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="btn_arm">
+        <property name="text">
+         <string>选择</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="checkBox_goose">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="label_goose">
+        <property name="text">
+         <string>升级GOOSE:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="lineEdit_goose">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="btn_goose">
+        <property name="text">
+         <string>选择</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="checkBox_config">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label_config">
+        <property name="text">
+         <string>更新配置:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="lineEdit_config">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="btn_config">
+        <property name="text">
+         <string>选择</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="Ltxt">
+      <property name="minimumSize">
+       <size>
+        <width>670</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="btn_update">
+      <property name="text">
+       <string>升级</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>791</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_arm</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>select_arm_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_dsp</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>select_dsp_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_update</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>execute_update_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_arm</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>enable_update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_dsp</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>enable_update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_system</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>select_system_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>739</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_config</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>enable_update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_config</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>select_config_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_system</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>enable_update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>29</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_goose</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>select_goose_program()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_goose</sender>
+   <signal>clicked()</signal>
+   <receiver>dtuupdateWidget</receiver>
+   <slot>enable_update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>enable_update()</slot>
+  <slot>select_update_program()</slot>
+  <slot>execute_update_program()</slot>
+  <slot>select_dsp_program()</slot>
+  <slot>select_system_program()</slot>
+  <slot>select_arm_program()</slot>
+  <slot>select_config_program()</slot>
+  <slot>select_goose_program()</slot>
+ </slots>
+</ui>

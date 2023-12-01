@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sdlpct_settings_adjust_widget</class>
+ <widget class="QWidget" name="sdlpct_settings_adjust_widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>sdlpct_settings_adjust_widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget_adjust">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_analog_adjust">
+      <attribute name="title">
+       <string>模拟量整定</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLabel" name="label_input_vol">
+                   <property name="maximumSize">
+                    <size>
+                     <width>75</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>输入电压：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_input_vol">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>94</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <double>65535.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_input_cur">
+                   <property name="maximumSize">
+                    <size>
+                     <width>75</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>输入电流：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_input_cur">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>94</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <double>65535.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="label_vol_step">
+                   <property name="maximumSize">
+                    <size>
+                     <width>75</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>电压步长：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_vol_step">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>94</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <double>65535.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_cur_step">
+                   <property name="maximumSize">
+                    <size>
+                     <width>75</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>电流步长：</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="doubleSpinBox_cur_step">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>94</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <double>65535.000000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="title">
+                <string/>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="0">
+                 <widget class="QRadioButton" name="radio_amplitude">
+                  <property name="text">
+                   <string>幅值整定</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QRadioButton" name="radio_phase">
+                  <property name="text">
+                   <string>相位整定</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget_operate">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>250</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="btn_select">
+               <property name="maximumSize">
+                <size>
+                 <width>700</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>选择...</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_start">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>开始</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_cancel_last">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>取消上次操作</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_restart">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>重新开始</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_display_result">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>显示整定结果...</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_save">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>35</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget_adjustresult">
+           <column>
+            <property name="text">
+             <string>通道号</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>通道名称</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>变比</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>截距</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>零漂</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>角度偏差</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>308</width>
+               <height>25</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_tip">
+             <property name="text">
+              <string>要开始整定数据,请先读取一次整定定值</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_show_clear">
+             <property name="text">
+              <string>清空显示</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_read_adjust">
+             <property name="text">
+              <string>读取</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_start</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>start_calibrate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>894</x>
+     <y>-129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_select</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>select_channel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>907</x>
+     <y>-121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_display_result</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>show_result()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1097</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_save</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>save_result()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1021</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_restart</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>restart_calibrate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>866</x>
+     <y>-60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cancel_last</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>cancel_last_step()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>883</x>
+     <y>-78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_read_adjust</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>get_adjust_result()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>914</x>
+     <y>679</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>932</x>
+     <y>826</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_show_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>clear_tablewigdet_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>832</x>
+     <y>690</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_adjustresult</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>sdlpct_settings_adjust_widget</receiver>
+   <slot>modify_adjust_result()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>453</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>start_calibrate()</slot>
+  <slot>select_channel()</slot>
+  <slot>show_result()</slot>
+  <slot>save_result()</slot>
+  <slot>restart_calibrate()</slot>
+  <slot>cancel_last_step()</slot>
+  <slot>get_adjust_result()</slot>
+  <slot>clear_tablewigdet_show()</slot>
+  <slot>modify_adjust_result()</slot>
+ </slots>
+</ui>

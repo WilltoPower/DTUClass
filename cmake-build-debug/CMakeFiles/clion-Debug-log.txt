@@ -1,0 +1,31 @@
+C:\Users\51570\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/51570/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Users\51570\Desktop\DTU -B C:\Users\51570\Desktop\DTU\cmake-build-debug
+-- 未知编译环境,使用默认CK860进行编译
+-- build ck860
+-- Set debug compilation options
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+CMake Error at CMakeLists.txt:5 (project):
+  The CMAKE_C_COMPILER:
+
+    /toolchains/csky-linux-gnuabiv2/bin/csky-abiv2-linux-gcc
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
+  the compiler, or to the compiler name if it is in the PATH.
+
+
+CMake Error at CMakeLists.txt:5 (project):
+  The CMAKE_CXX_COMPILER:
+
+    /toolchains/csky-linux-gnuabiv2/bin/csky-abiv2-linux-g++
+
+  is not a full path to an existing compiler tool.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+  to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!

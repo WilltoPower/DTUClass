@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AllConfigure>
+    <device no="0" appID="1000" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1001"/>
+            <mside enable ="1" appID ="1002"/>
+            <mside enable ="1" appID ="1003"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="1" appID ="1004"/>
+            <nside enable ="1" appID ="1005"/>
+            <nside enable ="1" appID ="1006"/>
+        </NSIDE>
+    </device>
+    <device no="1" appID="1011" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1008"/>
+            <mside enable ="0" appID ="1009"/>
+            <mside enable ="0" appID ="1010"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1011"/>
+            <nside enable ="0" appID ="1012"/>
+            <nside enable ="0" appID ="1013"/>
+        </NSIDE>
+    </device>
+    <device no="2" appID="1014" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1015"/>
+            <mside enable ="0" appID ="1016"/>
+            <mside enable ="0" appID ="1017"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1018"/>
+            <nside enable ="0" appID ="1019"/>
+            <nside enable ="0" appID ="1020"/>
+        </NSIDE>
+    </device>
+    <device no="3" appID="1021" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1022"/>
+            <mside enable ="0" appID ="1023"/>
+            <mside enable ="0" appID ="1024"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1025"/>
+            <nside enable ="0" appID ="1026"/>
+            <nside enable ="0" appID ="1027"/>
+        </NSIDE>
+    </device>
+    <device no="4" appID="1048" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1028"/>
+            <mside enable ="0" appID ="1029"/>
+            <mside enable ="0" appID ="1030"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1031"/>
+            <nside enable ="0" appID ="1032"/>
+            <nside enable ="0" appID ="1033"/>
+        </NSIDE>
+    </device>
+    <device no="5" appID="1034" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1035"/>
+            <mside enable ="0" appID ="1036"/>
+            <mside enable ="0" appID ="1037"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1038"/>
+            <nside enable ="0" appID ="1039"/>
+            <nside enable ="0" appID ="1040"/>
+        </NSIDE>
+    </device>
+    <device no="6" appID="1041" mac="01:0C:CD:01:01:01" ineth = "eth0" outeth="eth1">
+        <MSIDE>
+            <mside enable ="1" appID ="1042"/>
+            <mside enable ="0" appID ="1043"/>
+            <mside enable ="0" appID ="1044"/>
+        </MSIDE>
+        <NSIDE>
+            <nside enable ="0" appID ="1045"/>
+            <nside enable ="0" appID ="1046"/>
+            <nside enable ="0" appID ="1047"/>
+        </NSIDE>
+    </device>
+</AllConfigure>

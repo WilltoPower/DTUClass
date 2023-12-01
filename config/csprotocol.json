@@ -1,0 +1,91 @@
+{
+	"protocol" : {
+        "asduaddr" : 1,
+        "master" : {
+            "CS101" : {
+                "used" : true,
+                "mode" : 0,
+                "otheraddr":2,
+                "serial" : "/dev/ttyS1",
+                "baudrate" : 9600,
+                "databits" : 8,
+                "pairty" : 0,
+                "stopbits" : 1,
+                "AppLayerParameters" : {
+                    "sizeOfCOT" : 2,
+                    "sizeOfCA" : 2,
+                    "sizeOfIOA" : 3,
+                    "MeasuredValueType" : 1,
+                    "TelegramValueType" : 1
+                },
+                "LinkLayerParameters" : {
+                    "LinkAddrLength" : 1,
+                    "SingalCharACK" : true,
+                    "TimeoutForACK" : 500,
+                    "TimeoutForRepeat" : 1000
+                },
+                "ExtraParameters" : {
+                    "isSequence" : true
+                }
+            },
+            "CS104" : {
+                "used" : true,
+                "localIP" : "0.0.0.0",
+                "port" : 2404,
+                "AppLayerParameters" : {
+                    "sizeOfCOT" : 2,
+                    "sizeOfCA" : 2,
+                    "sizeOfIOA" : 3,
+                    "MeasuredValueType" : 1,
+                    "TelegramValueType" : 1
+                },
+                "ExtraParameters" : {
+                    "isSequence" : true
+                }
+            }
+        },
+        "slave" : {
+            "CS101" : {
+                "used" : true,
+                "mode" : 0,
+                "otheraddr":2,
+                "serial" : "/dev/ttyS1",
+                "baudrate" : 9600,
+                "databits" : 8,
+                "pairty" : 0,
+                "stopbits" : 1,
+                "AppLayerParameters" : {
+                    "sizeOfCOT" : 2,
+                    "sizeOfCA" : 2,
+                    "sizeOfIOA" : 3,
+                    "MeasuredValueType" : 1,
+                    "TelegramValueType" : 1
+                },
+                "LinkLayerParameters" : {
+                    "LinkAddrLength" : 1,
+                    "SingalCharACK" : true,
+                    "TimeoutForACK" : 500,
+                    "TimeoutForRepeat" : 1000
+                },
+                "ExtraParameters" : {
+                    "isSequence" : true
+                }
+            },
+            "CS104" : {
+                "used" : true,
+                "localIP" : "0.0.0.0",
+                "port" : 2404,
+                "AppLayerParameters" : {
+                    "sizeOfCOT" : 2,
+                    "sizeOfCA" : 2,
+                    "sizeOfIOA" : 3,
+                    "MeasuredValueType" : 1,
+                    "TelegramValueType" : 1
+                },
+                "ExtraParameters" : {
+                    "isSequence" : true
+                }
+            }
+        }
+	}
+}

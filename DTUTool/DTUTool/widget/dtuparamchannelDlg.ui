@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sdlpct_select_channel_dlg</class>
+ <widget class="QDialog" name="sdlpct_select_channel_dlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>647</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>test</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_selected">
+     <property name="text">
+      <string>已选通道：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_unselected">
+     <property name="text">
+      <string>可选通道：</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_selected">
+       <property name="text">
+        <string>&lt;&lt; 选择</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_unselected">
+       <property name="text">
+        <string>&gt;&gt; 删除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_selected_all">
+       <property name="text">
+        <string>&lt;&lt; 全部选择</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_unselected_all">
+       <property name="text">
+        <string>&gt;&gt; 全部删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="2" rowspan="4">
+    <widget class="QListWidget" name="listWidget_unselected"/>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>210</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="btn_ok">
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="btn_cancel">
+     <property name="text">
+      <string>取消</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" rowspan="4">
+    <widget class="QTableWidget" name="tableWidget_selected">
+     <column>
+      <property name="text">
+       <string>通道号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>通道名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_selected</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>select_one_channel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>-87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_unselected</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>delete_one_channel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>-55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_selected_all</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>select_all_channel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>-38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_unselected_all</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>delete_all_channel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>-58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_ok</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>select_ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>-103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cancel</sender>
+   <signal>clicked()</signal>
+   <receiver>sdlpct_select_channel_dlg</receiver>
+   <slot>select_cancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>-125</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_one_channel()</slot>
+  <slot>delete_one_channel()</slot>
+  <slot>select_all_channel()</slot>
+  <slot>delete_all_channel()</slot>
+  <slot>select_ok()</slot>
+  <slot>select_cancel()</slot>
+ </slots>
+</ui>

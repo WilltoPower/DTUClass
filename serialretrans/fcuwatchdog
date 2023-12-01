@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# 百兆网口驱动
+# insmod /jffs2/smac.ko
+
+# IP地址配置
+/jffs2/app/sdlsoft/config/DTUnetconfig.sh
+
+# MAC地址配置
+/jffs2/app/sdlsoft/config/DTUSetMac.sh
+
+while [ true ]
+        do
+                appIsRunning=$(ps -ef | grep -v "grep" |grep "sdl9200$")
+                if [ "$appIsRunning" = "" ] 
+                        then
+                        if [ -f /jffs2/app/sdlsoft/sdl9200 ]
+                        then
+                        cd /jffs2/app/sdlsoft
+                        ./sdl9200 &
+                        else
+                        echo The program sdl9200 is not installed !!
+                        fi
+                fi
+        sleep 5
+                appIsRunning=$(ps -ef | grep -v "grep" |grep "retrans$")
+                if [ "$appIsRunning" = "" ] 
+                        then
+                        if [ -f /jffs2/app/sdlsoft/retrans ]
+                        then
+                        cd /jffs2/app/sdlsoft
+                        ./retrans &
+                        else
+                        echo The program retrans is not installed !!
+                        fi
+                fi
+        sleep 5
+        done
+exit 0

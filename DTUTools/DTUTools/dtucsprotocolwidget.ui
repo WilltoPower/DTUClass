@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dtucsprotocolwidget</class>
+ <widget class="QWidget" name="dtucsprotocolwidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1031</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IEC60870-101/104规约</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_1">
+      <attribute name="title">
+       <string>104规约</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="led_104">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_104_1">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>104规约</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_clear_104_msg">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>清空报文显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_clear_104_log">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>清空日志显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_roll_104">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>滚动显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_save_104">
+           <property name="text">
+            <string>导出报文</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>487</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QTableWidget" name="tableWidget_104"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser_104">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>101规约</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="led_101">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_101_1">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>101规约</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_clear_101_msg">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>清空报文显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_clear_101_log">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>清空日志显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_roll_101">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>滚动显示</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_save_101">
+           <property name="text">
+            <string>导出报文</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>487</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QTableWidget" name="tableWidget_101"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QTextBrowser" name="textBrowser_101">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>规约配置</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>220</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>220</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>通用配置</string>
+         </property>
+         <widget class="QSpinBox" name="spinBox_asdu">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>20</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>1</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>本机单元地址</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_cfg_read">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>读取配置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_cfg_save">
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>保存配置</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_cfg_default">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>恢复默认配置</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>104规约配置</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget104"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>15</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="2">
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>101规约配置</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget101"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_clear_101_log</sender>
+   <signal>clicked()</signal>
+   <receiver>textBrowser_101</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>267</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_clear_101_msg</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>clear_101()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_roll_101</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>AutoScroll_101()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_roll_104</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>AutoScroll_104()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_clear_104_msg</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>clear_104()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_clear_104_log</sender>
+   <signal>clicked()</signal>
+   <receiver>textBrowser_104</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cfg_read</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>read_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>606</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cfg_save</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>save_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>766</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_cfg_default</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>default_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>927</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_104</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>explain_104(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget_101</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>explain_101(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_save_104</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>save_file_104()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_save_101</sender>
+   <signal>clicked()</signal>
+   <receiver>dtucsprotocolwidget</receiver>
+   <slot>save_file_101()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clear_101()</slot>
+  <slot>clear_104()</slot>
+  <slot>AutoScroll_101()</slot>
+  <slot>AutoScroll_104()</slot>
+  <slot>read_config()</slot>
+  <slot>save_config()</slot>
+  <slot>default_config()</slot>
+  <slot>explain_101(int,int)</slot>
+  <slot>explain_104(int,int)</slot>
+  <slot>save_file_104()</slot>
+  <slot>save_file_101()</slot>
+ </slots>
+</ui>

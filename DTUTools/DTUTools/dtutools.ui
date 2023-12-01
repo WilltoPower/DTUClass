@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DTUToolsClass</class>
+ <widget class="QMainWindow" name="DTUToolsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1054</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SDL-9200-D30 配电自动化终端运维工具</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1054</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="arestart"/>
+   <addaction name="aupdate"/>
+   <addaction name="atime"/>
+   <addaction name="aversion"/>
+   <addaction name="abuildver"/>
+   <addaction name="aarmconfig"/>
+   <addaction name="agoose"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_sysconfig">
+   <property name="windowTitle">
+    <string>系统配置</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_menu">
+   <property name="windowTitle">
+    <string>信息查看</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_adjust">
+   <property name="windowTitle">
+    <string>定值整定</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_csprotocol">
+   <property name="windowTitle">
+    <string>101/104规约</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <property name="toolTip">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <action name="aversion">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/version.png</normaloff>:/DTUTools/icon/version.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统版本信息</string>
+   </property>
+   <property name="toolTip">
+    <string>系统版本信息</string>
+   </property>
+  </action>
+  <action name="aupdate">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/update.png</normaloff>:/DTUTools/icon/update.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统升级</string>
+   </property>
+   <property name="toolTip">
+    <string>系统升级</string>
+   </property>
+  </action>
+  <action name="arestart">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/restart.png</normaloff>:/DTUTools/icon/restart.png</iconset>
+   </property>
+   <property name="text">
+    <string>系统重启</string>
+   </property>
+   <property name="toolTip">
+    <string>系统重启</string>
+   </property>
+  </action>
+  <action name="atime">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/time.png</normaloff>:/DTUTools/icon/time.png</iconset>
+   </property>
+   <property name="text">
+    <string>校准时间</string>
+   </property>
+   <property name="toolTip">
+    <string>校准时间</string>
+   </property>
+  </action>
+  <action name="abuildver">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/buildver.png</normaloff>:/DTUTools/icon/buildver.png</iconset>
+   </property>
+   <property name="text">
+    <string>内部版本</string>
+   </property>
+   <property name="toolTip">
+    <string>内部版本</string>
+   </property>
+  </action>
+  <action name="aarmconfig">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/config.png</normaloff>:/DTUTools/icon/config.png</iconset>
+   </property>
+   <property name="text">
+    <string>后台配置</string>
+   </property>
+   <property name="toolTip">
+    <string>后台配置</string>
+   </property>
+  </action>
+  <action name="agoose">
+   <property name="icon">
+    <iconset resource="dtutools.qrc">
+     <normaloff>:/DTUTools/icon/goose.png</normaloff>:/DTUTools/icon/goose.png</iconset>
+   </property>
+   <property name="text">
+    <string>GOOSE配置</string>
+   </property>
+   <property name="toolTip">
+    <string>GOOSE配置</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="dtutools.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>arestart</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>restart_soft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aupdate</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>update_soft()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aversion</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>show_version()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>atime</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>calibrate_time()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>abuildver</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>build_version()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aarmconfig</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>arm_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>agoose</sender>
+   <signal>triggered()</signal>
+   <receiver>DTUToolsClass</receiver>
+   <slot>goose_config()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>comm_config()</slot>
+  <slot>show_version()</slot>
+  <slot>update_soft()</slot>
+  <slot>restart_soft()</slot>
+  <slot>remote_ctrl()</slot>
+  <slot>calibrate_time()</slot>
+  <slot>build_version()</slot>
+  <slot>arm_config()</slot>
+  <slot>goose_config()</slot>
+ </slots>
+</ui>
